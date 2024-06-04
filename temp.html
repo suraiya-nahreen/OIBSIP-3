@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter Website</title> 
+  <link rel="stylesheet" href="temp.css">
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdpj8IiEZH1ElIySjNT4Ss4nK29QbLnbQClFOb7FkVxpQ7dusKMKVTeMybiTiDKfEKCVc&usqp=CAU" type="image/x-icon">  
+</head>
+
+<body>
+ <div class="temp-top" id="temp-top1">
+        <div class="temp-bg">
+            <div class="cover">
+                <div id="form">
+                    <label for="celcius" id="c">CELCIUS:</label>
+                    <input type=" number" id="celcius"  placeholder="Enter Celcius">
+                    <button class="button" onclick=" convertFahrenheit()" id="cf">Convert fahrenheit</button>
+                    <br><br>
+                    <label for="fahrenheit" id="f">FAHRENHEIT:</label>
+                    <input type=" number" id="fahrenheit"  placeholder="Enter Fahrenheit"
+                    >
+                    <button class="button" onclick="convertCelcius()" id="cc">Convert celcius</button>
+                    <br><br>
+
+                    <button class="button" onclick="reset()" id="res">Reset</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="temp.js"></script>
+</body>
+
+</html>

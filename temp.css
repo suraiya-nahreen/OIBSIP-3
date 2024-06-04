@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.temp-bg{
+    width: 100%;
+    height: 100vh;
+     background-image:/*linear-gradient(rgba(149, 191, 215, 0.632),rgba(0,0,0,0.7)) , */  url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     padding-top: 6%;
+}
+#form{
+    height: 85vh;
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+    /* border:1px solid rgba(37, 98, 116, 0.943); */
+    padding-top: 15%;
+    position: relative;
+    bottom: 40px;
+
+    
+    
+}
+#fahrenheit , #celcius{
+
+    background-color: rgba(205, 216, 219, 0.2);
+    
+}
+#celcius {
+    position: relative;
+    left: 35px;
+    bottom: 50px;
+}
+#fahrenheit{
+    position: relative;
+    bottom: 50px;
+    left: 12px;
+    width: 262px;
+    color: antiquewhite;
+}
+#cf{
+    position: relative;
+    left: 43px;
+    bottom: 50px;
+}
+#cc{
+    position: relative;
+    left: 19px;
+    bottom: 50px;
+    width: 190px;
+}
+.button{
+    background-color: rgb(28, 3, 19);
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(91, 131, 141);
+    cursor: pointer;
+    border: none;
+    /* border: 1px solid black; */
+    transition: all 0.3s;
+}
+input{
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    transition: all 0.3s;
+    border: 1px solid rgb(51, 85, 89);
+}
+label{
+    font-size: 25px;
+    margin-right: 15px;
+}
+.button:hover{
+    background-color: rgb(144, 62, 17);
+    
+}
+input:hover{
+    border: 2px solid darkgray;
+}
+#res{
+    width: 200px;
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+    background-color: 3(42, 2, 69);
+    color: 3(157, 163, 110);
+
+}
+#c{
+    color: rgb(90, 154, 154);
+    position: relative;
+    bottom: 50px;
+}
+#f{
+    color:  rgb(90, 154, 154);
+    position: relative;
+    bottom: 50px;
+}
+@media screen and (max-width:810px){
+    .button, input{
+        padding:10px;
+    }
+    #form{
+        width:90%;
+    }
+}
+@media screen and (max-width:600px){
+    label{
+        font-size: 35px;
+        font-weight: 500;
+        padding-bottom:10px;
+    }
+    #form{
+        width:98%;
+    }
+    .button, input{
+        margin-top: 20px;
+    }
+    input{
+        width:50%;
+    }
+    .button{
+        font-size: 30px;
+        color:lightgray
+    }
+}
